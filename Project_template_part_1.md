@@ -8,64 +8,48 @@
 
 **Управление отоплением:**
 
-- Пользователи могут…
-- Система поддерживает…
-- …
+- Пользователи могут включать/выключать отопление удаленно
 
 **Мониторинг температуры:**
 
-- Пользователи могут…
-- Система поддерживает…
-- …
+- Пользователи могут отслеживать текущию температуру
 
 ### 2. Анализ архитектуры монолитного приложения
 
-Перечислите здесь основные особенности текущего приложения: какой язык программирования используется, какая база данных, как организовано взаимодействие между компонентами и так далее.
+Приложение: Java.
+База данных: PostgreSQL
+Использует только синхронные запросы
 
 ### 3. Определение доменов и границы контекстов
 
-Опишите здесь домены, которые вы выделили.
+Домены:
+- Users
+- Devices
+- Telemetry
 
 ### **4. Проблемы монолитного решения**
 
-- …
-- …
-- …
-
-Если вы считаете, что текущее решение не вызывает проблем, аргументируйте свою позицию.
+- Может возникнуть проблемы с масштабированием
+- Сложность поддержания кодовой структуры приложения
+- Сложности при развертовании
 
 ### 5. Визуализация контекста системы — диаграмма С4
 
-Добавьте сюда диаграмму контекста в модели C4.
-
-Чтобы добавить ссылку в файл Readme.md, нужно использовать синтаксис Markdown. Это делают так:
-
-```markdown
-[Текст ссылки](URL)
-```
-
-Замените `Текст ссылки` текстом, который хотите использовать для ссылки. Вместо `URL` вставьте адрес, на который должна вести ссылка. Например:
-
-```markdown
-[Посетите Яндекс](https://ya.ru/)
-```
+[Context](https://www.plantuml.com/plantuml/png/ROunRm8n38Nt_0gNYKgKMpfrGc9eXr8X47CLxWn4IkoJywAs_xuNE5Ner2MEtxC_lrM6DvGK7G8Yqnjx13dJ_YU34wrLmDzmq9wWT5H04tN1k4LGSUuXI1jBnyKYNO0-lpID-Q_bEU1IZYMpjHKXMBQQcbrelNNw4RZdsAoVdxRH2mwRzoRv3BP1-bnhwbNgHbzZkIrRLfbNr89cXw7CXZfxTEwMSJv6ldM3DVQKhq8TtdZnvog1Ky_cKOpl09abQuNlhv_gx3YE5wVqLmQrnOm5zxW53Q-GIgEd4rrkIoDfcl3ltaObG6sm_aTcnYJoYgKhAVu2)
 
 # Задание 2. Проектирование микросервисной архитектуры
 
 В этом задании вам нужно предоставить только диаграммы в модели C4. Мы не просим вас отдельно описывать получившиеся микросервисы и то, как вы определили взаимодействия между компонентами To-Be системы. Если вы правильно подготовите диаграммы C4, они и так это покажут.
 
 **Диаграмма контейнеров (Containers)**
-
-Добавьте диаграмму.
+[Containers](https://www.plantuml.com/plantuml/png/ZLHHJzim47xFh_3wiY81VTdJde0MmJRO2YdFw1fVWuLZH-TpkshQVv-TEkcAgKGaHExotVTzldpfXMCWzeqkFhymj-xhPD9gCB5pNjbc4lvQQz3mcLHG4pG5AzOeRX5OcLgKMyVOYAar3CeW5MnRmLOiBRDjX5I45IjhYkAJCfNs4ZrfqKiHRCvhnIz-wHrI5KY2KgVxg2eWQNygR55Ffb_Evj7Lq_tTf86WIA7rFEszdRVn0E7QkHadSxlgL8nwiwvhZ4Bd7WpKiHNg5WdO4uvEUeBdwzyyTcYSfO0jkvluT3ZbyvNrHW9jCwa5EXwT_2b4k0RuWqUFuokohnW9Vy3g5QAB6MgrHX8DEWSrkg1nC3U-0SODR0FqSlvDf2fEPiXxQwmEc-pEfeouRDk8-mxhJkaMjRPYOqdBRFJ98NNxwCp5IgGoJjxOOLyeubjo0emKP7NkTxRydsm634jm-0vfS5lRsLLcPOPhLU7UpAu-QaTsZzqOf9n8rCWe36xwzabkBmda1fDGtuaQS-ku9YmVxZAR2zJO8DEsH8fp0JsqHEhjpLvMbM-y1aOXWK6iB0d1FJutcT4dLuSoVVDmdN-BHzJxs0ofw5VMPM6nc9S16v5xm93EELdfA-n36IUcXC3uvEBpQwbuTxVmP7wPz7-rEXKbykBWSmeAX-aQHC9ndMy64NTCvJsIzoEs8SMuYoQ2x3RThURXBd7qscypbbj9NsYQUuDFvKVrvrr-SgBZ2q_ezFDpV6KPxlZxAz788JbfBi_mmF285QerxZEQXIKV7jqWxmSEOvQBvGmVVPCNQAHlz3y0)
 
 **Диаграмма компонентов (Components)**
 
-Добавьте диаграмму для каждого из выделенных микросервисов.
+[Components](https://www.plantuml.com/plantuml/png/dPDFYzim4CNl_XIgBqsW6rzwwcctARI5tHAopNdHoaDMe3zYD6enIxzxPQqLaM2Hke4SPZm_lUUdyQqdZXIqQjw_43d_gUkSucRiR8JLNVmxQy3GJI_v4RbkI982zWquINDaZuCdq6oRnngoZf5bpvR8QjPB147IcgPv9urGeOU0YcKfvBytHqaluJbuG64DWQ6akvU2Osz_I72Wkkt7cztewl1mtsaU5J6sdawY6pU-GFFcvUcp3QRdEAnygZ-mzjniktvj6XP_swZ7fG5SZUeFtF0ZO1m_n8fDPHlhhxPTizU492pB9YmUueDEt9qVZ61tk--ht5otwmgsGzi7SO7bPXrx1Fmb1Tpp8Q5JoL9TXVRWh9TaSSXSwPoXVovpwM4ylYJp9TN_ais4BaudWujVr2qDD2lzVpe42ZGG3fExYFxCBJRrSaOp4HL-F1AjKe1dH-HsTb335sSb5jzA4LiGLmni3-hYAvdPueE7oEJHyuTp-tkTcEwzZARPovLygwjcvXxdBRiwMDkjOcV--a_DggroUTTdvoSAMFDt2wOFMlq5)
 
 **Диаграмма кода (Code)**
 
-Добавьте одну диаграмму или несколько.
-
+[Device code](https://www.plantuml.com/plantuml/png/bOzDQiGm38NtFeMMqpEqb86PnHJwiyXSm8sLL63PGLPQIkZTAt38oYsPGB1bV-zx-5ZKYyuSdP96X8vjX4jcstuNHOOpVbAFSCe1uKn-5C_EQPv0CxndrSmGIB1NoiavHqbH1c-9frDczYaixgTrVB4_eZnSrnc8fuYCISl6FCBYmBxA7ZQqh-lTlQdxw4k15mpaLIhUOGg7wZ38c1LwnQ_wcbRNqk1ghxJmzMhPGXtg5Nb2yJhBdmqDTbzB3JxJ-A5lwJ_x1jsi7OOTNgDsYTqHKvWv_W80)
 # Задание 3. Разработка ER-диаграммы
-
-Добавьте сюда ER-диаграмму. Она должна отражать ключевые сущности системы, их атрибуты и тип связей между ними.
+[ER](https://www.plantuml.com/plantuml/png/ZP0_JyCm4CLtVufZHYGB4qAeg4KKgQsg_fcH6vzQIxOlii-WAE6xuzGjIZEHmRvxkVTxjYU1fUTeZM3D1c5hKmjpigbi0gE5jmtCj3nwQOLWge493iHC5fJsMB4c9yITTfM92gCtS6AkmrDPUlbT73MVuY46z1KvHiT5HRRSw4fwHIkDDPfo-lYmDjBnVhaehKoPFacVKx8rkTvHzwSJgTBSm3wXe1MGllltg1LygDnisMjtX9MqU2EiJ-Gkoa87VfvJ3FW2vos8doiu2nayuEQw3ntbl2hbCOG1U8PVki8bgMWIVzWDOxB-hmlaqLrJ8_JB29B_j6FlS6o71YsoRsQIPJk4NWWtvdweDvzVkEkAeciXlueuhtyQNDrvote7WrE9c-JHW11YWav5Qtu1)
